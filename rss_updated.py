@@ -1,3 +1,4 @@
+import logging
 import urllib.request
 
 from flask import Flask, request
@@ -5,6 +6,8 @@ import lxml.etree
 
 
 app = Flask(__name__)
+app.logger.addHandler(logging.StreamHandler())
+app.logger.setLevel(logging.INFO)
 
 
 @app.route('/<path:path>')
