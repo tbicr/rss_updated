@@ -1,0 +1,4 @@
+flask==0.10.1
+werkzeug==0.9.6
+lxml==3.4.0
+gunicorn==19.1.1
